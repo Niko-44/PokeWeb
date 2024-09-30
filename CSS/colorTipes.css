@@ -1,0 +1,71 @@
+.fire {
+    background-color: #f44336; /* Rojo para tipo Fuego */
+}
+
+.water {
+    background-color: #2196f3; /* Azul para tipo Agua */
+}
+
+.grass {
+    background-color: #4caf50; /* Verde para tipo Planta */
+}
+
+.electric {
+    background-color: #ffeb3b; /* Amarillo para tipo Eléctrico */
+}
+
+.ice {
+    background-color: #00bcd4; /* Cian para tipo Hielo */
+}
+
+.fighting {
+    background-color: #673ab7; /* Púrpura para tipo Lucha */
+}
+
+.rock {
+    background-color: #a1887f; /* Marrón claro para tipo Roca */
+}
+
+.psychic {
+    background-color: #e91e63; /* Rosa para tipo Psíquico */
+}
+
+.bug {
+    background-color: #8bc34a; /* Verde claro para tipo Bicho */
+}
+
+.ghost {
+    background-color: #9c27b0; /* Púrpura oscuro para tipo Fantasma */
+}
+
+.normal {
+    background-color: #9e9e9e; /* Gris para tipo Normal */
+}
+
+.poison {
+    background-color: #ab47bc; /* Púrpura claro para tipo Veneno */
+}
+
+.dark {
+    background-color: #4e342e; /* Marrón oscuro para tipo Siniestro */
+}
+
+.fairy {
+    background-color: #f48fb1; /* Rosa suave para tipo Hada */
+}
+
+.steel {
+    background-color: #b0bec5; /* Gris metálico para tipo Acero */
+}
+
+.flying {
+    background-color: #90caf9; /* Azul claro para tipo Volador */
+}
+
+.ground {
+    background-color: #d7ccc8; /* Marrón claro para tipo Tierra */
+}
+
+.dragon {
+    background-color: #1976d2; /* Azul oscuro para tipo Dragón */
+}

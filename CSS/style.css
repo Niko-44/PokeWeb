@@ -1,0 +1,274 @@
+@import url('colorTipes.css');
+
+/*--------------------Estilo cuerpo pagina--------------------*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f6f6f7;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.16'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #f7d23d, #f7a03d);
+
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.buscador {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buscador input[type="text"] {
+    padding: 10px;
+    border: 2px solid #ff7f50; 
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 200px; 
+}
+
+.buscador input[type="button"] {
+    padding: 10px 15px;
+    background-color: #ff7f50; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buscador input[type="button"]:hover {
+    background-color: #ff5733; 
+}
+
+.buscador label {
+    margin-left: 10px; 
+}
+
+.buscador select {
+    padding: 10px;
+    border: 2px solid #ff7f50; 
+    border-radius: 5px;
+    margin-left: 10px; 
+    background-color: white; 
+    color: #333; 
+    cursor: pointer; 
+}
+
+.buscador select:focus {
+    border-color: #ff5733; 
+    outline: none; 
+}
+
+.main-container h1 {
+    font-size: 2.5rem; /* Tamaño del texto */
+    color: #ff7f50; /* Color que combine con el buscador */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    text-align: center; /* Centrar el texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra sutil para el texto */
+    font-family: 'Arial', sans-serif; /* Fuente */
+}
+
+
+/*--------------------Estilo data pokemon--------------------*/
+
+#pokemons-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#pokemons-data .pokemon-img{
+    margin-bottom: 30px;
+}
+
+#pokemons-data #corazon {
+    cursor: pointer;
+
+}
+
+.pokemon-card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.tipo {
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.tipo span {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    max-width: calc(50% - 5px);
+    text-align: center;
+}
+
+/*-------------------RESPONSIVE-------------------*/
+
+
+.pokemon-card {
+    width: 25%;
+    margin: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .pokemon-card {
+        width: 45%; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .pokemon-card {
+        width: 90%; 
+    }
+}
+
+.main-container {
+    padding: 10px; 
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        padding: 10px; 
+    }
+}
+
+.buscador input[type="text"] {
+    width: 100%; 
+    max-width: 300px; 
+}
+
+@media (max-width: 480px) {
+    .buscador {
+        flex-wrap: wrap; 
+    }
+    .buscador input[type="text"] {
+        margin-right: 0;
+        margin-bottom: 10px; 
+    }
+    .buscador input[type="button"],
+    .buscador select {
+        width: 100%; 
+    }
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; 
+    }
+}
+
+
+#pokemons-data {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 10px; 
+}
+
+
+/*--------------------Estilo cuerpo pagina--------------------*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f6f6f7;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.16'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #f7d23d, #f7a03d);
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-container {
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        padding: 10px;
+    }
+    .main-container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        padding: 5px;
+    }
+}
+
+.buscador {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buscador input[type="text"] {
+    padding: 10px;
+    border: 2px solid #ff7f50; 
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 100%; 
+    max-width: 300px;
+}
+
+@media (max-width: 480px) {
+    .buscador {
+        flex-wrap: wrap;
+    }
+    .buscador input[type="text"],
+    .buscador input[type="button"],
+    .buscador select {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

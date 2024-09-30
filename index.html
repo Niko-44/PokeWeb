@@ -4,14 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="Images/pokeball_icon.png" />
+
     <title>Pokedex</title>
 </head>
 
 <body>
-    <div>
-        <img src="Images/Pokemon_logo.png" alt="">
-        <h2>Pokedex</h2>
-    </div>
+    <header class="main-header">
+        <a href="index.html"><img src="Images/Pokemon_logo.png" alt=""></a>
+    </header>
+
+
+    <main id="main" class="main-container">
+        <h1>Pokedex</h1>
+
+        <div class="buscador">
+
+            <input type="text" name="barra_busqueda" id="barra_busqueda" placeholder="Buscar Pokemon">
+            <input type="button" name="buscar" id="buscar" value="Buscar">
+
+            <label for="filtro-tipo">Tipo:</label>
+            <select name="filtro-tipo" id="filtro-tipo-pkm">
+                <option value="Todos">Todos</option>
+                <option value="Acero">Acero</option>
+                <option value="Agua">Agua</option>
+                <option value="Bicho">Bicho</option>
+                <option value="Dragon">Dragon</option>
+                <option value="Electrico">Electrico</option>
+                <option value="Fantasma">Fantasma</option>
+                <option value="Fuego">Fuego</option>
+                <option value="Hielo">Hielo</option>
+                <option value="Lucha">Lucha</option>
+                <option value="Normal">Normal</option>
+                <option value="Planta">Planta</option>
+                <option value="Psiquico">Psiquico</option>
+                <option value="Roca">Roca</option>
+                <option value="Siniestro">Siniestro</option>
+                <option value="Tierra">Tierra</option>
+                <option value="Volador">Volador</option>
+
+            </select>
+
+        </div>
+
+        <div id="pokemons-data">
+            <script src="JavaScript/index.js"></script>
+        </div>
+
+    </main>
 
 </body>
 

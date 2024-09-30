@@ -1,0 +1,113 @@
+#pokemon-detalles {
+    margin-top: 30px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/*--------------------Estilo para detalles del Pokémon--------------------*/
+#pokemon-detalles h2 {
+    font-size: 2rem;
+    color: #ff7f50;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#pokemon-detalles .pokemon-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#pokemon-detalles img {
+    max-width: 150px;
+    border-radius: 15px;
+}
+
+#pokemon-detalles .info-text {
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+#pokemon-detalles .info-text span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#pokemon-detalles .tipo span {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 1rem;
+}
+
+/*--------------------Estilo del botón--------------------*/
+button.volver {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #ff7f50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button.volver:hover {
+    background-color: #ff5733;
+}
+
+/*--------------------Estilo contenido--------------------*/
+
+.pokemon-detail-card h2 {
+    color: #ff7f50; /* Color que combine con el resto de la página */
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.pokemon-detail-card img {
+    width: 150px; /* Ajusta el tamaño del sprite */
+    height: 150px;
+    object-fit: contain;
+    margin: 20px 0;
+}
+
+.pokemon-detail-card h3 {
+    font-size: 1.5rem;
+    color: #333333;
+    margin-top: 30px;
+}
+
+.pokemon-detail-card ul {
+    list-style-type: none; /* Remueve los puntos predeterminados */
+    padding: 0;
+    margin: 20px 0; /* Espacio entre el listado y otros elementos */
+}
+
+.pokemon-detail-card p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.pokemon-detail-card li {
+    margin: 10px 0; /* Espacio entre cada habilidad */
+    padding: 10px 15px; /* Relleno interno */
+    background: #f9f9f9; /* Fondo gris claro */
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 10px; /* Bordes redondeados */
+    color: #333; /* Color de texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, background 0.3s ease; /* Transiciones suaves */
+}
+
+/* Efecto al pasar el cursor sobre cada habilidad */
+.pokemon-detail-card li:hover {
+    background: #ff7f50; /* Fondo de color naranja suave */
+    color: white; /* Texto blanco para contraste */
+    transform: translateY(-5px); /* Efecto de elevación */
+}
