@@ -89,26 +89,41 @@ function buscarPokemon() {
     });
 }
 
+// Función para filtrar Pokémon por tipo
 function filtrarPorTipo() {
     const tipoSeleccionado = document.getElementById('filtro-tipo-pkm').value;
-    
-    const pokemonFiltrados = tipoSeleccionado === 'Todos' 
-        ? todosLosPokemon 
-        : todosLosPokemon.filter(pokemon => {
-            return pokemon.types.some(type => type.type.name === tipoSeleccionado);
-        });
+    let html = '';
 
-    // Obtener los detalles de cada Pokémon filtrado
-    pokemonFiltrados.forEach(function (pokemon) {
-        fetch(pokemon.url)
-            .then(res => res.json())
-            .then(pokemonData => {
-                html += crearCardHTML(pokemonData);
-                document.getElementById('pokemons-data').innerHTML = html;
-            })
-            .catch(error => console.log('Error al obtener datos del Pokémon:', error));
-    });
+    // Filtramos según el tipo seleccionado
+    if (tipoSeleccionado === 'All') {
+        // Si se selecciona "Todos", mostramos todos los Pokémon
+        todosLosPokemon.forEach(function (pokemon) {
+            fetch(pokemon.url)
+                .then(res => res.json())
+                .then(pokemonData => {
+                    html += crearCardHTML(pokemonData);
+                    document.getElementById('pokemons-data').innerHTML = html;
+                })
+                .catch(error => console.log('Error al obtener datos del Pokémon:', error));
+        });
+    } else {
+        // Filtramos solo los Pokémon que tienen el tipo seleccionado
+        todosLosPokemon.forEach(function (pokemon) {
+            fetch(pokemon.url)
+                .then(res => res.json())
+                .then(pokemonData => {
+                    // Comprobamos si el Pokémon tiene el tipo seleccionado
+                    if (pokemonData.types.some(type => type.type.name === tipoSeleccionado.toLowerCase())) {
+                        html += crearCardHTML(pokemonData);
+                    }
+                    // Actualizamos el contenedor con las tarjetas de Pokémon filtrados
+                    document.getElementById('pokemons-data').innerHTML = html;
+                })
+                .catch(error => console.log('Error al obtener datos del Pokémon:', error));
+        });
+    }
 }
+
 
 // Agregar evento al botón de búsqueda
 document.getElementById('buscar').addEventListener('click', buscarPokemon);
